@@ -1,0 +1,122 @@
+// variables
+$primary: #236DA9;
+
+$gutter: 20px;
+
+// mixins
+@mixin clearfix {
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+
+
+//////
+
+body {
+	margin:0;
+	padding:0;
+	font-family:Helvetica;
+	color:#333;
+}
+.container {
+	width:100%;
+	max-width:600px;
+
+	padding:0 $gutter;
+	margin:0 auto;
+
+	@include clearfix;
+}
+
+a {
+	color:#333;
+	transition: all .25s ease;
+	text-decoration: none;
+		box-shadow: inset 0px -2px 0px rgba(0,255,180,.5);
+
+	&:hover {
+		box-shadow: inset 0px -1em 0px rgba(0,255,180,.5);
+	}
+}
+// HEADER
+.hero {
+	padding:20px 0;
+	background:lighten($primary, 55%);
+	background:#f3f3f3;
+}
+.header-logo {
+	width:200px;
+	margin:0 auto;
+	transform: translate(-5%);
+}
+.header-title {
+	margin-top:0;
+	font-size:1.6em;
+
+	color: $primary;
+	text-align: center;
+	font-weight:bold;
+}
+.header-title-2 {
+	font-size:1.3em;
+	color: $primary;
+	text-align: center;
+	font-weight:normal;
+}
+.next-meetup {
+	padding: 20px 0;
+	background: #fff;
+}
+.content {
+	padding: 20px 0;
+	border-top:1px solid #ddd;
+}
+
+// columns
+.row {
+	margin:0 (-$gutter);
+	@include clearfix;
+}
+.col1of2 {
+	padding-left:$gutter;
+	padding-right: $gutter;
+	@media (min-width:600px) {
+		float:left;
+		width:50%;
+	}
+}
+
+ul {
+	margin: 0;
+	padding:0;
+
+	li {
+		list-style-type: none;
+		margin:0;
+		padding:4px;
+	}
+}
+
+.text-nowrap {
+	white-space: nowrap;
+}
+//SVG LOGO
+.logo-outline,
+.logo-lancaster,
+.logo-frontend,
+.logo-meetup {
+	fill: $primary;
+}
