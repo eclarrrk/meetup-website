@@ -65,7 +65,7 @@ a {
 }
 // HEADER
 .hero {
-	padding:20px 0;
+	padding:calc(1rem + 5vw) 0;
 	background:lighten($secondary, 55%);
 	background:#f3f3f3;
 	background: linear-gradient(to top right, lighten($primary, 35%), lighten($secondary, 25%));
@@ -110,7 +110,7 @@ a {
 
 
 footer {
-	padding-top: 3rem;
+	padding-top: 2rem;
 	font-size: .8em;
 }
 .btn {
