@@ -35,7 +35,8 @@ body {
 h3, h4 {
 	margin-bottom:.66em;
 }
-h3 {font-size:1.5rem;}
+h3 {font-size:1.5rem;
+line-height: 1.4em;}
 p {
 	margin-top:0;
 }
@@ -52,7 +53,7 @@ p {
 }
 
 a {
-	color:#333;
+	color:inherit;
 	transition: all .25s ease;
 	text-decoration: none;
 	box-shadow: inset 0px -2px 0px rgba(0,255,180,.5);
@@ -73,21 +74,24 @@ a {
 	transform: translate(-5%);
 }
 .header-title {
-	margin-top:0;
-	font-size:1.6em;
+	margin-top:.5em;
+	font-size: 1.6em;
 
 	color: $primary;
 	text-align: center;
 	font-weight:bold;
 }
 .header-title-2 {
-	font-size:1.3em;
-	color: $primary;
+	font-size:1.3em;	
+	margin-top:.5em;
+
+	// color: $primary;
 	text-align: center;
 	font-weight:normal;
+	line-height: 1.4em;
 }
 .next-meetup {
-	padding: 20px 0;
+	padding: calc(1rem + 2vw) 0;
 	background: #fff;
 }
 .content {
@@ -95,29 +99,10 @@ a {
 	border-top:1px solid #ddd;
 }
 
-// columns
-.row {
-	margin:0 (-$gutter);
-	@include clearfix;
-}
-.col1of2 {
-	padding-left:$gutter;
-	padding-right: $gutter;
-	@media (min-width:600px) {
-		float:left;
-		width:50%;
-	}
-}
 
-ul {
-	margin: 0;
-	padding:0;
-
-	li {
-		list-style-type: none;
-		margin:0;
-		padding:4px;
-	}
+footer {
+	padding-top: 3rem;
+	font-size: .8em;
 }
 .btn {
 	display:inline-block;
@@ -127,6 +112,7 @@ ul {
 	background: $primary;
 	box-shadow: inset 0 -3px 0 0 rgba(0,0,0,.2);
 	border-radius: 2px;
+	margin-bottom: 1rem;
 
 	&:hover {
 		box-shadow: inset 0 -6px 0 0 rgba(0,0,0,.35);
