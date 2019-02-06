@@ -30,23 +30,34 @@
 		"oAP": "/code-of-conduct.html",
 		"oF": 0
 		},
-	"/embossed_paper.png": {
-		"ft": 32768,
-		"iS": 165,
-		"oA": 0,
-		"oAP": "/embossed_paper.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"/favicon.ico": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/favicon.ico",
 		"oF": 0
+		},
+	"/images/embossed_paper_@2X.png": {
+		"ft": 32768,
+		"iS": 164,
+		"oA": 0,
+		"oAP": "/images/embossed_paper_@2X.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/images/group-duscussion-at-the-lancaster-front-end-meetup.jpg": {
+		"ft": 16384,
+		"iS": 43729,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/group-duscussion-at-the-lancaster-front-end-meetup.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
 		},
 	"/index.html": {
 		"cB": 0,
