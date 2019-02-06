@@ -7,8 +7,15 @@
 		"uuidString": "0F5B4915-E225-4E97-966E-03B0B8DC1EDD"
 		}
 	],
-"creatorBuild": "28901",
+"creatorBuild": "28905",
 "files": {
+	"/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/.gitignore",
+		"oF": 0
+		},
 	"/CNAME": {
 		"cB": 0,
 		"ft": 8192,
@@ -33,6 +40,13 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/favicon.ico",
+		"oF": 0
 		},
 	"/index.html": {
 		"cB": 0,
@@ -145,7 +159,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 571118643.38789201,
-	"displayValue": "frontend-meetup-website",
+	"displayValue": "meetup-website",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-hart",
 	"iconImageWasSetByUser": 0
