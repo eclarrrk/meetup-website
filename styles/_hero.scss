@@ -1,0 +1,64 @@
+.hero {
+    background-color: var(--primary);
+    padding: calc(3em + 1vw) 0 calc(1.5em + 1vw);
+    color: white;
+    position: relative;
+    nav {
+        position: relative;
+        z-index: 2;
+    }
+    a:hover,
+    a:focus {
+        color: var(--secondary);
+    }    
+}
+
+.hero:before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    @supports (mix-blend-mode: multiply) {
+    background: transparent url('embossed_paper.png') repeat;
+    mix-blend-mode: multiply;
+    }
+}
+
+.hero__title {
+    margin: 0;
+    @include font-size(2.25, 3);
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    line-height: 1;
+    color: var(--secondary);
+    position: relative;
+    z-index: 2;
+
+}
+.hero__title + .hero__subtitle {
+    margin-top: .66em;
+}
+.hero__subtitle {
+    margin: 0 0 1em 0;
+    @include font-size(1.1, 1.2);
+    font-weight: 500;
+    position: relative;
+    z-index: 2;
+
+    &.hero__logo {
+        font-size: 1.5em;
+        font-weight: 900;
+        line-height: 1;
+        text-transform: uppercase;
+        letter-spacing: .08em;
+
+        small {
+            font-size: 64%;
+        }
+    }
+}

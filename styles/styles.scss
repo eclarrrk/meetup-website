@@ -1,0 +1,74 @@
+@import 'normalize';
+@import 'responsive-typography';
+@import 'hero';
+
+// variables
+:root {
+	--primary: #401376;
+	--secondary: #a9ffa6;
+	--secondary--d: #33c72e;
+	font-family: 'IBM Plex Sans', sans-serif;
+	@include font-size(1,1.2);
+	line-height: 1.6;
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+.container {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 0 calc(1em + 1vw);
+}
+main {
+	padding: 2em 0;
+}
+a,
+a:visited {
+	display: inline-block;
+	position: relative;
+	color: inherit;
+	text-decoration: underline;
+	text-decoration-color: var(--secondary--d);
+	transform: translate(0,0);
+	&:hover,
+	&:focus {
+		color: var(--primary);
+	}
+	&:active {
+	transform: translate(0,1px);
+	}
+}
+
+.list--unstyled {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+p.lead {
+	font-size: 115%;
+	margin-bottom: 1.5em;
+		color: var(--primary);
+}
+h2 {
+	margin: 1em 0 .5em;
+}
+hr {
+	border: 0;
+	border-top: 1px solid var(--primary);
+	margin: 2em 0;
+}
+main{
+	h2,h3 {
+		color: var(--primary);
+	}
+}
+.button,
+.button:visited {
+	display: inline-block;
+	padding: .5em 1.33em;
+	background-color: var(--secondary);
+	font-weight: 900;
+	text-decoration: none;
+}
