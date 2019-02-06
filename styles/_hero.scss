@@ -3,14 +3,21 @@
     padding: calc(3em + 1vw) 0 calc(1.5em + 1vw);
     color: white;
     position: relative;
+    background-image: url('images/group-duscussion-at-the-lancaster-front-end-meetup.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    overflow: hidden;
+
     nav {
         position: relative;
         z-index: 2;
     }
+
     a:hover,
     a:focus {
         color: var(--secondary);
-    }    
+    }
 }
 
 .hero:before {
@@ -18,14 +25,25 @@
     display: block;
     position: absolute;
     z-index: 1;
-    top: 0;
+    top: -20px;
     left: 0;
     right: 0;
     bottom: 0;
 
     @supports (mix-blend-mode: multiply) {
-    background: transparent url('embossed_paper.png') repeat;
-    mix-blend-mode: multiply;
+        background: transparent url('images/embossed_paper_@2x.png') repeat;
+        mix-blend-mode: multiply;
+        animation: noise 1.5s infinite linear;
+    }
+}
+
+@keyframes noise {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(0, 20px);
     }
 }
 
@@ -40,9 +58,11 @@
     z-index: 2;
 
 }
-.hero__title + .hero__subtitle {
+
+.hero__title+.hero__subtitle {
     margin-top: .66em;
 }
+
 .hero__subtitle {
     margin: 0 0 1em 0;
     @include font-size(1.1, 1.2);

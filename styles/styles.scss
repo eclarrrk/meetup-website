@@ -4,26 +4,32 @@
 
 // variables
 :root {
-	--primary: #401376;
+	--primary: #432770;
 	--secondary: #a9ffa6;
 	--secondary--d: #33c72e;
 	font-family: 'IBM Plex Sans', sans-serif;
-	@include font-size(1,1.2);
+	@include font-size(1, 1.2);
 	line-height: 1.6;
 	box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
 	box-sizing: inherit;
 }
+
 .container {
 	width: 100%;
 	max-width: 600px;
 	margin: 0 auto;
 	padding: 0 calc(1em + 1vw);
 }
+
 main {
 	padding: 2em 0;
 }
+
 a,
 a:visited {
 	display: inline-block;
@@ -31,13 +37,15 @@ a:visited {
 	color: inherit;
 	text-decoration: underline;
 	text-decoration-color: var(--secondary--d);
-	transform: translate(0,0);
+	transform: translate(0, 0);
+
 	&:hover,
 	&:focus {
 		color: var(--primary);
 	}
+
 	&:active {
-	transform: translate(0,1px);
+		transform: translate(0, 1px);
 	}
 }
 
@@ -46,24 +54,31 @@ a:visited {
 	padding: 0;
 	margin: 0;
 }
+
 p.lead {
 	font-size: 115%;
 	margin-bottom: 1.5em;
-		color: var(--primary);
+	color: var(--primary);
 }
+
 h2 {
 	margin: 1em 0 .5em;
 }
+
 hr {
 	border: 0;
 	border-top: 1px solid var(--primary);
 	margin: 2em 0;
 }
-main{
-	h2,h3 {
+
+main {
+
+	h2,
+	h3 {
 		color: var(--primary);
 	}
 }
+
 .button,
 .button:visited {
 	display: inline-block;
