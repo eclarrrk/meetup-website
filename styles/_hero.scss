@@ -31,7 +31,7 @@
     bottom: 0;
 
     @supports (mix-blend-mode: multiply) {
-        background: transparent url('images/embossed_paper_@2x.png') repeat;
+        background: transparent url('images/embossed_paper.png') repeat;
         mix-blend-mode: multiply;
         animation: noise 1.75s infinite linear;
     }
@@ -59,7 +59,9 @@
 
     span {
         opacity: 0;
-        transform: translateY(-2rem);
+        transform: translateY(-2rem) scale(1.2);
+
+        transform-origin: 33% center;
         filter: blur(5px);
         animation: fade-in-down .8s ease-out;
         animation-delay: .3s;
@@ -86,23 +88,14 @@
     position: relative;
     z-index: 2;
 
-    span {
-        opacity: 0;
-        transform: translateY(-2rem);
-        filter: blur(5px);
-        animation: fade-in-down .4s ease-out;
-        animation-delay: 1.5s;
-        animation-fill-mode: forwards;
+    opacity: 0;
+    transform: translateY(-2rem) scale(1.2);
+    transform-origin: 33% center;
+    filter: blur(5px);
+    animation: fade-in-down .6s ease-out;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
 
-        &:nth-child(2) {
-            animation-delay: 1.9s;
-        }
-
-        &:nth-child(3) {
-            animation-delay: 2.3s;
-        }
-
-    }
 
     &.hero__logo {
         font-size: 1.5em;
@@ -128,13 +121,13 @@
 @keyframes fade-in-down {
     from {
         opacity: 0;
-        transform: translateY(-2rem);
+        transform: translateY(-2rem) scale(1.2);
         filter: blur(5px);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0rem);
+        transform: translateY(0rem) scale(1);
         filter: blur(0);
     }
 }
@@ -142,13 +135,13 @@
 @keyframes fade-in-up {
     from {
         opacity: 0;
-        transform: translateY(2rem);
+        transform: translateY(2rem) scale(1.2);
         filter: blur(5px);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0rem);
+        transform: translateY(0rem) scale(1);
         filter: blur(0);
     }
 }
